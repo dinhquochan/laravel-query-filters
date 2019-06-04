@@ -1,0 +1,50 @@
+{
+    "name": "dinhquochan/laravel-query-filters",
+    "description": "Query filters in Laravel",
+    "homepage": "https://github.com/dnhquochan/laravel-query-filters",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dinh Quoc Han",
+            "email": "contact@dinhquochan.com",
+            "homepage": "https://dinhquochan.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.1.3",
+        "illuminate/console": "~5.8",
+        "illuminate/database": "~5.8",
+        "illuminate/http": "~5.8",
+        "illuminate/support": "~5.8"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^3.7",
+        "phpunit/phpunit": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "DinhQuocHan\\QueryFilters\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "DinhQuocHan\\QueryFilters\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "DinhQuocHan\\QueryFilters\\QueryFilterServiceProvider"
+            ]
+        }
+    }
+}

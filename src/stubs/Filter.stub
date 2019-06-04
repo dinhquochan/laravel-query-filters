@@ -1,0 +1,81 @@
+<?php
+
+namespace DummyNamespace;
+
+use DinhQuocHan\QueryFilters\Sortable;
+use DinhQuocHan\QueryFilters\Searchable;
+use DinhQuocHan\QueryFilters\QueryFilter;
+
+class DummyClass extends QueryFilter
+{
+    use Sortable, Searchable;
+
+    /**
+     * The ignored filters.
+     *
+     * @var array
+     */
+    protected $ignore = [];
+
+    /**
+     * Sort direction.
+     *
+     * @var string
+     */
+    protected $sortDirection = 'desc';
+
+    /**
+     * Default sort by column.
+     *
+     * @var string
+     */
+    protected $sortBy = 'created_at';
+
+    /**
+     * Sortable columns.
+     *
+     * @var array
+     */
+    protected $sortable = [
+        'created_at',
+    ];
+
+    /**
+     * Searchable columns.
+     *
+     * @var array
+     */
+    protected $searchable = [
+        'id',
+    ];
+
+    /**
+     * Build an "index" query for the filter.
+     *
+     * @return void
+     */
+    public function indexQuery()
+    {
+        //
+    }
+
+    /**
+     * Execute before handle filters.
+     *
+     * @return void
+     */
+    public function beforeHandle()
+    {
+        //
+    }
+
+    /**
+     * Execute after handle filters.
+     *
+     * @return void
+     */
+    public function afterHandle()
+    {
+        //
+    }
+}
