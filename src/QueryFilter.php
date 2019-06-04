@@ -316,6 +316,7 @@ abstract class QueryFilter
             $this->getQuery()->getModel()->setPerPage($perPage);
         }
     }
+
     /**
      * Alias to set the "offset" value of the query.
      *

@@ -52,6 +52,7 @@ class FilterMakeCommand extends GeneratorCommand
     {
         return __DIR__.'/stubs/Filter.stub';
     }
+
     /**
      * Get the default namespace for the class.
      *
@@ -66,6 +67,7 @@ class FilterMakeCommand extends GeneratorCommand
 
         return $rootNamespace.'\Http\Filters';
     }
+
     /**
      * Get the console command options.
      *
@@ -77,6 +79,7 @@ class FilterMakeCommand extends GeneratorCommand
             ['force', null, InputOption::VALUE_NONE, 'Create the class even if the filter already exists'],
         ];
     }
+
     /**
      * Determine if it is custom namespace.
      *
