@@ -8,8 +8,8 @@ Laravel Query Filters for [Laravel](https://laravel.com/).
 
 ## Requirements
 
-- PHP >= 7.1.3
-- Laravel >= 5.8.*
+- PHP >= 7.2.0
+- Laravel >= 5.6
 
 ## Installation
 
@@ -41,7 +41,7 @@ class PostFilter extends QueryFilter
      * Filter by user id.
      *
      * @param  int  $id
-     * @return void 
+     * @return void
      */
     public function userId($id)
     {

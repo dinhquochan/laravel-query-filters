@@ -2,11 +2,11 @@
 
 namespace DinhQuocHan\QueryFilters\Tests;
 
-use Illuminate\Http\Request;
+use DinhQuocHan\QueryFilters\QueryFilter;
+use DinhQuocHan\QueryFilters\Searchable;
 use DinhQuocHan\QueryFilters\Sortable;
 use Illuminate\Database\Eloquent\Model;
-use DinhQuocHan\QueryFilters\Searchable;
-use DinhQuocHan\QueryFilters\QueryFilter;
+use Illuminate\Http\Request;
 
 class QueryFilterTest extends TestCase
 {

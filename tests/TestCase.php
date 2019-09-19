@@ -2,8 +2,8 @@
 
 namespace DinhQuocHan\QueryFilters\Tests;
 
-use Orchestra\Testbench\TestCase as Orchestra;
 use DinhQuocHan\QueryFilters\QueryFilterServiceProvider;
+use Orchestra\Testbench\TestCase as Orchestra;
 
 class TestCase extends Orchestra
 {

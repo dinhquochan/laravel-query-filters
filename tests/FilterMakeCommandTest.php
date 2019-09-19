@@ -18,9 +18,9 @@ class FilterMakeCommandTest extends TestCase
 
         $contents = file_get_contents($shouldOutputFilePath);
 
-        $this->assertContains('namespace App\Http\Filters;', $contents);
+        $this->assertStringContainsString('namespace App\Http\Filters;', $contents);
 
-        $this->assertContains('class PostFilter extends QueryFilter', $contents);
+        $this->assertStringContainsString('class PostFilter extends QueryFilter', $contents);
     }
 
     /** @test */
@@ -37,8 +37,8 @@ class FilterMakeCommandTest extends TestCase
 
         $contents = file_get_contents($shouldOutputFilePath);
 
-        $this->assertContains('namespace App\Blog;', $contents);
+        $this->assertStringContainsString('namespace App\Blog;', $contents);
 
-        $this->assertContains('class CategoryFilter extends QueryFilter', $contents);
+        $this->assertStringContainsString('class CategoryFilter extends QueryFilter', $contents);
     }
 }

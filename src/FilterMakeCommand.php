@@ -2,8 +2,8 @@
 
 namespace DinhQuocHan\QueryFilters;
 
-use Illuminate\Support\Str;
 use Illuminate\Console\GeneratorCommand;
+use Illuminate\Support\Str;
 use Symfony\Component\Console\Input\InputOption;
 
 class FilterMakeCommand extends GeneratorCommand
