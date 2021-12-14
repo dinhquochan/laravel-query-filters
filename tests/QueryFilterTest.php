@@ -3,8 +3,8 @@
 namespace DinhQuocHan\QueryFilters\Tests;
 
 use DinhQuocHan\QueryFilters\QueryFilter;
-use DinhQuocHan\QueryFilters\Searchable;
-use DinhQuocHan\QueryFilters\Sortable;
+use DinhQuocHan\QueryFilters\SearchableQueryFilter;
+use DinhQuocHan\QueryFilters\SortableQueryFilter;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\Request;
 
@@ -185,7 +185,7 @@ class TestModelFilters extends QueryFilter
 
 class TestModelWithSortableFilters extends QueryFilter
 {
-    use Sortable;
+    use SortableQueryFilter;
 
     protected $sortable = ['id'];
 
@@ -196,7 +196,7 @@ class TestModelWithSortableFilters extends QueryFilter
 
 class TestModelWithSearchableFilters extends QueryFilter
 {
-    use Searchable;
+    use SearchableQueryFilter;
 
     protected $searchable = ['title', 'tags'];
 }

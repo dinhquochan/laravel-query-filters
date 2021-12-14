@@ -8,8 +8,8 @@ Laravel Query Filters for [Laravel](https://laravel.com/).
 
 ## Requirements
 
-- PHP >= 7.2.0
-- Laravel >= 5.6
+- PHP >= 7.4, >= 8.0
+- Laravel >= 6.0
 
 ## Installation
 
@@ -110,12 +110,12 @@ Allow to sort items, you must add `$sortable` property, default if not call `sor
 
 namespace App\Http\Filters;
 
-use DinhQuocHan\QueryFilters\Sortable;
+use DinhQuocHan\QueryFilters\SortableQueryFilter;
 use DinhQuocHan\QueryFilters\QueryFilter;
 
 class PostFilter extends QueryFilter
 {
-    use Sortable;
+    use SortableQueryFilter;
 
     /**
      * Sort direction.
@@ -161,12 +161,12 @@ Allow to search items, you must add `$searchable` property:
 
 namespace App\Http\Filters;
 
-use DinhQuocHan\QueryFilters\Searchable;
+use DinhQuocHan\QueryFilters\SearchableQueryFilter;
 use DinhQuocHan\QueryFilters\QueryFilter;
 
 class PostFilter extends QueryFilter
 {
-    use Searchable;
+    use SearchableQueryFilter;
 
     /**
      * Searchable columns.

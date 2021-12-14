@@ -4,7 +4,7 @@ namespace DinhQuocHan\QueryFilters;
 
 use Illuminate\Support\Str;
 
-trait Searchable
+trait SearchableQueryFilter
 {
     /**
      * Get searchable column.
@@ -66,15 +66,15 @@ trait Searchable
         $startSearch = Str::endsWith($keyword, '*');
 
         if (! $endSearch && ! $startSearch) {
-            return '%'.$keyword.'%';
+            return '%' . $keyword . '%';
         }
 
         if ($endSearch) {
-            return '%'.ltrim($keyword, '*');
+            return '%' . ltrim($keyword, '*');
         }
 
         if ($startSearch) {
-            return rtrim($keyword, '*').'%';
+            return rtrim($keyword, '*') . '%';
         }
 
         return $keyword;

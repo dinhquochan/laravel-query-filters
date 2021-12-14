@@ -2,14 +2,14 @@
 
 namespace DinhQuocHan\QueryFilters;
 
-trait Sortable
+trait SortableQueryFilter
 {
     /**
      * Initialize sortable trait.
      *
      * @return void
      */
-    public function initializeSortable()
+    public function initializeSortableQueryFilter()
     {
         $this->getQuery()->orderBy($this->sortBy, $this->sortDirection);
     }
